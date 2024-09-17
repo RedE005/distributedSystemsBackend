@@ -19,12 +19,15 @@ public class RestService {
         this.messageRepository = messageRepository;
     }
 
-    public List<MessageEntity> getAllMessages () {
+    public List<MessageEntity> getAllMessages() {
         return messageRepository.findAll();
     }
 
-    public Optional<MessageEntity> getMessageOfId (Long Id) {
+    public Optional<MessageEntity> getMessageOfId(Long Id) {
         return messageRepository.findById(Id);
     }
 
+    public MessageEntity saveMessage(MessageEntity message) {
+        return messageRepository.save(message);
+    }
 }
