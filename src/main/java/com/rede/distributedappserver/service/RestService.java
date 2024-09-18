@@ -1,6 +1,6 @@
 package com.rede.distributedappserver.service;
 
-import com.rede.distributedappserver.entity.MessageEntity;
+import com.rede.distributedappserver.model.MessageEntity;
 import com.rede.distributedappserver.repository.MessageRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

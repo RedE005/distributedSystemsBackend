@@ -1,4 +1,4 @@
-package com.rede.distributedappserver.entity;
+package com.rede.distributedappserver.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,6 +1,6 @@
 package com.rede.distributedappserver.repository;
 
-import com.rede.distributedappserver.entity.MessageEntity;
+import com.rede.distributedappserver.model.MessageEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

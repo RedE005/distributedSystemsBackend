@@ -1,11 +1,16 @@
 package com.rede.distributedappserver.controller;
 
 import com.rede.distributedappserver.service.RestService;
-import com.rede.distributedappserver.entity.MessageEntity;
+import com.rede.distributedappserver.model.MessageEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
