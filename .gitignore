@@ -32,3 +32,6 @@ replay_pid*
 HELP.md
 mvnw
 mvnw.cmd
+
+# Environment files
+.env

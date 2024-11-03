@@ -1,26 +1,19 @@
 package com.rede.distributedappserver.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import static jakarta.persistence.GenerationType.IDENTITY;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity
+@Document(value = "DistributedAppMessage")
 public class MessageEntity {
-
-    @Column(name = "message")
     private String message;
 
     @Id
-    @Column(name = "message_id")
-    @GeneratedValue(strategy = IDENTITY)
-    private long Id;
+    private String id;
 }
